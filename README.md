@@ -79,10 +79,14 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 
 ### Usage
 1. Select the object intended for displacement.
-2. Open the **Depthmap Stamper** panel in the **Sidebar (N-panel)** or **Properties** editor.
-3. Import the 16-bit depth texture into the texture field.
-4. Adjust the strength and midlevel settings to match the original export range.
-5. Click **Apply Displacement** to generate the modifier stack.
+2. Unwrap it
+3. Open the **Depthmap Stamper** panel in the **Sidebar (N-panel)** or **Properties** editor.
+4. Import the 16-bit depth texture into the texture field.
+5. Adjust the strength and midlevel settings to match the original export range.
+6. Click **Apply Displacement** to generate the modifier stack.
+
+<img width="405" height="403" alt="unwaped uvs stacked" src="https://github.com/user-attachments/assets/e25b3fde-dff3-4892-a300-e498a5d77b02" />
+
 
 <img width="443" height="673" alt="image" src="https://github.com/user-attachments/assets/228c6dde-47b6-4ba7-885a-ad9fa1a281d0" />
 
