@@ -1,6 +1,6 @@
 # Depthmap Export for Blender
 
-A high-precision, one-click solution for exporting normalized 16-bit depth maps and diffuse textures.
+A high-precision, one-click solution for exporting normalized 16-bit depth maps.
 
 ---
 
@@ -25,15 +25,14 @@ This Blender add-on streamlines the technical workflow of generating depth data.
 
 <img width="390" height="173" alt="Screenshot 2026-03-02 190318" src="https://github.com/user-attachments/assets/463a39ee-a57b-4034-8cff-48b9d452e6bf" />
 
-
-
 ## Usage
-
+Set up your bender scene and create 2 empties "Near" represtnts the top most height, and "Far" the bottom most (see image)
 1. Open the **Properties** editor.
 2. Select the **Render** tab.
 3. Locate the **True Depth Export** panel.
 4. Click **Export Depthmap (.png)**.
-5. Choose your destination folder and filename.
+5. Add the empties to the feilds
+6. Choose your destination folder and filename.
 
 <img width="610" height="609" alt="Screenshot 2026-03-02 185446" src="https://github.com/user-attachments/assets/b9c37b49-2759-4c75-a97d-fd5e2895fd59" />
 
