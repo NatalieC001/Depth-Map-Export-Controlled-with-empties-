@@ -99,8 +99,8 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 6. Click **Apply Displacement** to generate the modifier stack.
 
 <p align="center">
-  <img width="400" src="https://github.com/user-attachments/assets/e25b3fde-dff3-4892-a300-e498a5d77b02" alt="UV Mapping" />
-  <img width="443" src="https://github.com/user-attachments/assets/228c6dde-47b6-4ba7-885a-ad9fa1a281d0" alt="Modifier Settings" />
+  <img width="539" src="https://github.com/user-attachments/assets/e25b3fde-dff3-4892-a300-e498a5d77b02" alt="UV Mapping" />
+  <img width="539" src="https://github.com/user-attachments/assets/228c6dde-47b6-4ba7-885a-ad9fa1a281d0" alt="Modifier Settings" />
   <br><em>Image 3: The settings and modifiers visible when running the script.</em>
 </p>
 
@@ -117,12 +117,12 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 
 <p align="center">
   <img width="539" src="https://github.com/user-attachments/assets/f618b0bc-8637-45e6-a1e8-647271902046" alt="Applied Map" />
-  <img width="596" src="https://github.com/user-attachments/assets/465bf7c0-ea2d-4f01-a71f-4fb104a62ee8" alt="Object View" />
+  <img width="539" src="https://github.com/user-attachments/assets/465bf7c0-ea2d-4f01-a71f-4fb104a62ee8" alt="Object View" />
   <br><em>Image 1: The in-scene view of an object with the map applied.</em>
 </p>
 
 <p align="center">
-  <img width="443" src="https://github.com/user-attachments/assets/c4e28872-7aed-47a1-9daf-b7e4724ab9cc" alt="16-bit Texture" />
+  <img width="539" src="https://github.com/user-attachments/assets/c4e28872-7aed-47a1-9daf-b7e4724ab9cc" alt="16-bit Texture" />
   <br><em>Image 4: The 16-bit texture needed for import to drive displacement.</em>
 </p>
 
@@ -132,5 +132,5 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 </p>
 
 <p align="center">
-  <img width="518" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
+  <img width="539" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
 </p>
