@@ -135,6 +135,8 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
   <img width="539" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
 </p>
 
+### Blender project files (not included)
 
 Bellflower Quartet _stamp.blend
+
 Bellflower Quartet _stamp_how to apply texture.blend
