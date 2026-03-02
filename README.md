@@ -43,7 +43,6 @@ Set up your bender scene and create 2 empties "Near" represtnts the top most hei
 | **Engine** | EEVEE NEXT (Blender 4.2+) |
 | **Bit Depth** | 16-bit PNG |
 | **Output 1** | `[filename]_depthmap_Depth.png` |
-| **Output 2** | `[filename]_depthmap_Diffuse.png` |
 
 <img width="716" height="514" alt="Screenshot 2026-03-02 185552" src="https://github.com/user-attachments/assets/0274437c-670a-4733-b780-65775aaea1aa" />
 
