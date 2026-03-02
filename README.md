@@ -85,6 +85,7 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 5. Click **Apply Displacement** to generate the modifier stack.
 
 <img width="443" height="673" alt="image" src="https://github.com/user-attachments/assets/228c6dde-47b6-4ba7-885a-ad9fa1a281d0" />
+
 > **Image 3**: The settings and modifiers visible when running the script, the modifires get added automatically, just delete them to re-apply.
 
 ### Technical Specifications
@@ -94,10 +95,13 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 | **Input Format** | 16-bit PNG / EXR |
 | **Workflow** | Modifier-based Displacement / Multires |
 
+
 <img width="539" height="499" alt="image" src="https://github.com/user-attachments/assets/f618b0bc-8637-45e6-a1e8-647271902046" />
+
 > **Image 1**: The in-scene view of an object with the map applied.
 
 <img width="443" height="473" alt="image" src="https://github.com/user-attachments/assets/c4e28872-7aed-47a1-9daf-b7e4724ab9cc" />
+
 > **Image 4**: The 16-bit texture needed for import to drive displacement. (the same textures we created earlier)
 
 
