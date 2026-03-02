@@ -122,8 +122,6 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 ### Project Results
 
 <p align="center">
-  <img width="539" src="https://github.com/user-attachments/assets/f618b0bc-8637-45e6-a1e8-647271902046" alt="Applied Map" />
-
   <img width="701" height="452" alt="image" src="https://github.com/user-attachments/assets/9e792fa2-718a-42ad-a8d3-d6d45716a9e0" />
 
   <br><em>Image 1: The in-scene view of an object with the map applied.</em>
