@@ -127,8 +127,8 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 </p>
 
 <p align="center">
-<img width="539" height="1024" alt="image" src="https://github.com/user-attachments/assets/11ab3dc2-fec0-41a9-9eec-c97457ad5260" />
-  <br><em>Image: Mock visualization of the stamp.</em>
+<img width="539" height="1024" alt="image" src="https://github.com/user-attachments/assets/eeb1da07-b3a3-489a-9417-58e579cc0ce3" />
+  <br><em>Image: Mock visualization of the cutter stamp.</em>
 </p>
 
 <p align="center">
