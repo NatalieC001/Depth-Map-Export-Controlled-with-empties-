@@ -113,6 +113,7 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
 > **Image 4**: The 16-bit texture needed for import to drive displacement. (the same textures we created earlier)
 
 
+<img width="518" height="481" alt="image" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" />
 
 
 ---
