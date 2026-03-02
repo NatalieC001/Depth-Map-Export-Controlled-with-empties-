@@ -23,7 +23,9 @@ This Blender add-on streamlines the technical workflow of generating depth data.
 4. Click **Install** and select the downloaded file.
 5. Enable **Render: Depthmap Export**.
 
-<img width="390" alt="Add-on Installation" src="[https://github.com/user-attachments/assets/463a39ee-a57b-4034-8cff-48b9d452e6bf](https://github.com/user-attachments/assets/463a39ee-a57b-4034-8cff-48b9d452e6bf)" />
+<img width="390" height="173" alt="Screenshot 2026-03-02 190318" src="https://github.com/user-attachments/assets/463a39ee-a57b-4034-8cff-48b9d452e6bf" />
+
+
 
 ## Usage
 
@@ -33,7 +35,7 @@ This Blender add-on streamlines the technical workflow of generating depth data.
 4. Click **Export Depthmap (.png)**.
 5. Choose your destination folder and filename.
 
-<img width="610" alt="Panel Location" src="[https://github.com/user-attachments/assets/b9c37b49-2759-4c75-a97d-fd5e2895fd59](https://github.com/user-attachments/assets/b9c37b49-2759-4c75-a97d-fd5e2895fd59)" />
+<img width="610" height="609" alt="Screenshot 2026-03-02 185446" src="https://github.com/user-attachments/assets/b9c37b49-2759-4c75-a97d-fd5e2895fd59" />
 
 ## Technical Specifications
 
@@ -45,6 +47,6 @@ This Blender add-on streamlines the technical workflow of generating depth data.
 | **Output 1** | `[filename]_depthmap_Depth.png` |
 | **Output 2** | `[filename]_depthmap_Diffuse.png` |
 
-<img width="716" alt="Output Example" src="[https://github.com/user-attachments/assets/0274437c-185552-0274437c-670a-4733-b780-65775aaea1aa](https://www.google.com/search?q=https://github.com/user-attachments/assets/0274437c-185552-0274437c-670a-4733-b780-65775aaea1aa)" />
+<img width="716" height="514" alt="Screenshot 2026-03-02 185552" src="https://github.com/user-attachments/assets/0274437c-670a-4733-b780-65775aaea1aa" />
 
 ---
