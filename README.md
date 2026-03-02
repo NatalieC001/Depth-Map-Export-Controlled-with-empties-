@@ -12,6 +12,12 @@ In traditional 3D modeling, creating intricate surface details—like bolts, pan
 
 **Consistency:** Repeat complex patterns across different objects with uniform scale and depth.
 
+### Blender project files (not included)
+
+Bellflower Quartet _stamp.blend
+
+Bellflower Quartet _stamp_how to apply texture.blend
+
 ---
 
 ## Part 1: Depthmap Export (Blender)
@@ -135,8 +141,4 @@ This script automates the application of 16-bit depth maps onto 3D geometry. It 
   <img width="539" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
 </p>
 
-### Blender project files (not included)
 
-Bellflower Quartet _stamp.blend
-
-Bellflower Quartet _stamp_how to apply texture.blend
