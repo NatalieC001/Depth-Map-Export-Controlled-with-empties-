@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Depth Map Export (Controlled with empties)",
     "description": "Camera-based depth export using two empties as near/far bounds",
-    "author": "Natalie Coulam",
+    "author": "Natalie C  2026",
     "version": (1, 1, 0),
     "blender": (4, 2, 0),
     "category": "Render",
@@ -177,3 +177,4 @@ def unregister():
 
 if __name__ == "__main__":
     register()
+
