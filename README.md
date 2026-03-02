@@ -14,7 +14,7 @@ In traditional 3D modeling, creating intricate surface details—like bolts, pan
 
 ### Blender project files (not included)
 
-Bellflower Quartet _stamp.blend
+Scalloped_Teal_Bellflower_Master_Stamp.blend.blend
 
 Bellflower Quartet _stamp_how to apply texture.blend
 
