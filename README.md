@@ -56,33 +56,33 @@ Set up your bender scene and create 2 empties "Near" represtnts the top most hei
 ---
 
 
-## Part 2: Depthmap Placer (Unity)
+## Part 2: Depthmap Stamper (Displacement & Baking)
 
-The sister script for applying generated maps onto 3D objects within the Unity Engine.
+The sister script for applying depth stamps to objects to create high-resolution assets within Blender.
 
 ### Overview
-This Unity script automates the application of 16-bit depth textures to scene geometry. It maps the grayscale data to vertex displacement, ensuring the physical height in Unity matches the data exported from Blender.
+This script automates the application of 16-bit depth maps onto 3D geometry. It manages Multiresolution or Displacement modifiers to turn grayscale stamps into physical surface detail, preparing the mesh for final texture baking.
 
 ### Key Features
-* **16-bit Detail**: Fully utilizes high-bit-depth textures to ensure smooth surfaces.
-* **Automated Application**: Sets up the displacement modifiers and materials with one click.
-* **Direct Sync**: Built to interpret the "Near" and "Far" logic from the Blender export.
+* **Stamp Application**: Quickly applies 16-bit PNG stamps to mesh surfaces.
+* **Modifier Automation**: Automatically sets up the Displacement stack with correct texture settings.
+* **Multi-Resolution Support**: Configures levels of detail for high-fidelity sculpting and baking.
+* **Precision Mapping**: Uses the exported height data to drive exact vertex deformation.
 
 ### Installation
-1. Download `DepthMapPlacer.cs`.
-2. Drag the file into your Unity **Project** window (inside an **Editor** folder).
-3. The tool will appear in the **Inspector** when a 3D object is selected.
+1. Download the `depthmap_stamper.py` file.
+2. In Blender, go to **Edit > Preferences > Add-ons**.
+3. Click **Install**, select the file, and enable **Object: Depthmap Stamper**.
 
 <img width="327" height="270" alt="Placeholder interface How the plug in looks in the scene when ready to run" src="https://github.com/user-attachments/assets/c03333fc-fd2b-421e-950f-c1bff7a823ed" />
 > **Image 2**: How the plugin looks in the scene when ready to run.
 
 ### Usage
-Import the 16-bit PNG and ensure "Read/Write Enabled" is checked in the Unity Texture Import settings.
-1. Select the target **3D Object** in the hierarchy.
-2. Find the **Depth Map Placer** component in the inspector.
-3. Assign the texture to the **Depth Map** slot.
-4. Set your displacement parameters.
-5. Click **Apply Displacement**.
+1. Select the object intended for displacement.
+2. Open the **Depthmap Stamper** panel in the **Sidebar (N-panel)** or **Properties** editor.
+3. Import the 16-bit depth texture into the texture field.
+4. Adjust the strength and midlevel settings to match the original export range.
+5. Click **Apply Displacement** to generate the modifier stack.
 
 <img width="443" height="673" alt="image" src="https://github.com/user-attachments/assets/228c6dde-47b6-4ba7-885a-ad9fa1a281d0" />
 > **Image 3**: The settings and modifiers visible when running the script, the modifires get added automatically, just delete them to re-apply.
@@ -90,9 +90,9 @@ Import the 16-bit PNG and ensure "Read/Write Enabled" is checked in the Unity Te
 ### Technical Specifications
 | Feature | Specification |
 | --- | --- |
-| **Engine** | Unity 2022.3+ |
-| **Format** | 16-bit PNG |
-| **Method** | Mesh Displacement |
+| **Compatibility** | Blender 4.0+ |
+| **Input Format** | 16-bit PNG / EXR |
+| **Workflow** | Modifier-based Displacement / Multires |
 
 <img width="539" height="499" alt="image" src="https://github.com/user-attachments/assets/f618b0bc-8637-45e6-a1e8-647271902046" />
 > **Image 1**: The in-scene view of an object with the map applied.
