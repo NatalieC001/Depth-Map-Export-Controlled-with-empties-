@@ -40,7 +40,6 @@ Set up your bender scene and create 2 empties "Near" represtnts the top most hei
 
 | Feature | Specification |
 | --- | --- |
-| **Resolution** | 1024 x 1024 px (Hardcoded) |
 | **Engine** | EEVEE NEXT (Blender 4.2+) |
 | **Bit Depth** | 16-bit PNG |
 | **Output 1** | `[filename]_depthmap_Depth.png` |
