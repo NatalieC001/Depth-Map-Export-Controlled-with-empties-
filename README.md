@@ -29,7 +29,7 @@ This Blender add-on streamlines the technical workflow of generating depth data.
 Set up your bender scene and create 2 empties "Near" represtnts the top most height, and "Far" the bottom most (see image)
 1. Open the **Properties** editor.
 2. Select the **Render** tab.
-3. Locate the **True Depth Export** panel.
+3. Locate the **Depth Export** panel.
 4. Click **Export Depthmap (.png)**.
 5. Add the empties to the feilds
 6. Choose your destination folder and filename.
