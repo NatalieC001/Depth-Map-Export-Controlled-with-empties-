@@ -1,8 +1,8 @@
 import bpy
 
-class VIEW3D_PT_depth_map_placer(bpy.types.Panel):
-    bl_label = "Depth Map Placer"
-    bl_idname = "VIEW3D_PT_depth_map_placer"
+class VIEW3D_PT_depth_map_stamp(bpy.types.Panel):
+    bl_label = "Depth Map Stamper"
+    bl_idname = "VIEW3D_PT_depth_map_stamp"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
     bl_category = 'Depth Map'
@@ -19,15 +19,16 @@ class VIEW3D_PT_depth_map_placer(bpy.types.Panel):
         
         layout.separator()
 
-        # Conditional Info Box
+        box = layout.box()
         if not scene.depth_tiling:
-            box = layout.box()
-            box.label(text="Single Image Mode:", icon='INFO')
-            box.label(text="Ensure UV Islands are overlaid")
-            box.label(text="manually for repeated parts.")
-            layout.separator()
+            box.label(text="Single Image Mode", icon='INFO')
+            box.label(text="Uses existing UV layout.")
+        else:
+            box.label(text="Tiling Mode", icon='TEXTURE_DATA')
+            box.label(text="Texture will repeat across UVs.")
         
-        layout.operator("object.setup_relief_workflow", text="Generate Relief")
+        layout.separator()
+        layout.operator("object.setup_relief_workflow", text="Generate/Update Relief")
 
 class OBJECT_OT_setup_relief_workflow(bpy.types.Operator):
     bl_idname = "object.setup_relief_workflow"
@@ -42,60 +43,55 @@ class OBJECT_OT_setup_relief_workflow(bpy.types.Operator):
             self.report({'ERROR'}, "Select a mesh object.")
             return {'CANCELLED'}
 
-        if "Relief_Multires" in obj.modifiers or "Relief_Displace" in obj.modifiers:
-            self.report({'WARNING'}, "Modifiers already present.")
+        # Ensure UVs exist
+        if not obj.data.uv_layers:
+            self.report({'ERROR'}, "Mesh has no UV map. Please unwrap first.")
             return {'CANCELLED'}
 
-        # Apply scale
+        # Apply scale to ensure displacement units are correct
         bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
 
-        # UV Setup Logic
-        # If Tiling is ON: We Reset UVs to stack everything perfectly 0-1
-        # If Tiling is OFF: We keep existing UVs but warn the user to overlay them
-        if scene.depth_tiling:
-            bpy.ops.object.mode_set(mode='EDIT')
-            bpy.ops.mesh.select_all(action='SELECT')
-            bpy.ops.uv.reset()
-            bpy.ops.object.mode_set(mode='OBJECT')
-        else:
-            if not obj.data.uv_layers:
-                self.report({'ERROR'}, "Mesh lacks UV Map for single image.")
-                return {'CANCELLED'}
+        # 1. Handle Multires
+        m_res = obj.modifiers.get("Relief_Multires")
+        if not m_res:
+            m_res = obj.modifiers.new(name="Relief_Multires", type='MULTIRES')
+            # Subdivide a few times for detail
+            for i in range(4):
+                bpy.ops.object.multires_subdivide(modifier=m_res.name)
 
-        # Modifiers
-        m_res = obj.modifiers.new(name="Relief_Multires", type='MULTIRES')
-        for i in range(5):
-            bpy.ops.object.multires_subdivide(modifier=m_res.name)
-
-        disp = obj.modifiers.new(name="Relief_Displace", type='DISPLACE')
+        # 2. Handle Displace
+        disp = obj.modifiers.get("Relief_Displace")
+        if not disp:
+            disp = obj.modifiers.new(name="Relief_Displace", type='DISPLACE')
+        
         disp.texture_coords = 'UV'
         disp.direction = 'NORMAL'
-        disp.mid_level = 0.5 if not scene.depth_tiling else 0.0
+        # Adjusting midlevel: 0.5 is usually best for depth maps (gray = no move)
+        disp.mid_level = 0.5
         disp.strength = scene.depth_strength
 
+        # 3. Handle Texture
         tex = scene.depth_texture_ptr
         if tex:
             disp.texture = tex
-            if scene.depth_tiling:
-                tex.extension = 'REPEAT'
-            else:
-                tex.extension = 'EXTEND'
-            
-            self.report({'INFO'}, "Relief Generated.")
+            # Toggle repeat based on UI
+            tex.extension = 'REPEAT' if scene.depth_tiling else 'EXTEND'
+            self.report({'INFO'}, "Relief Updated.")
         else:
-            self.report({'WARNING'}, "Texture missing.")
+            self.report({'WARNING'}, "No texture assigned.")
 
         return {'FINISHED'}
 
+# Registration remains the same...
 def register():
-    bpy.utils.register_class(VIEW3D_PT_depth_map_placer)
+    bpy.utils.register_class(VIEW3D_PT_depth_map_stamp)
     bpy.utils.register_class(OBJECT_OT_setup_relief_workflow)
     bpy.types.Scene.depth_texture_ptr = bpy.props.PointerProperty(type=bpy.types.Texture)
     bpy.types.Scene.depth_tiling = bpy.props.BoolProperty(name="Tiling", default=False)
-    bpy.types.Scene.depth_strength = bpy.props.FloatProperty(name="Strength", default=0.05, min=-2.0, max=2.0)
+    bpy.types.Scene.depth_strength = bpy.props.FloatProperty(name="Strength", default=0.05)
 
 def unregister():
-    bpy.utils.unregister_class(VIEW3D_PT_depth_map_placer)
+    bpy.utils.unregister_class(VIEW3D_PT_depth_map_stamp)
     bpy.utils.unregister_class(OBJECT_OT_setup_relief_workflow)
     del bpy.types.Scene.depth_texture_ptr
     del bpy.types.Scene.depth_tiling
