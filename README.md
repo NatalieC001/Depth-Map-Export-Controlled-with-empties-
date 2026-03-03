@@ -122,7 +122,7 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 ## Project Results
 
 <p align="center">
-  <img width="910" height="906" alt="image" src="https://github.com/user-attachments/assets/c51add01-9135-4b8f-a2aa-0dbcc281371f" />
+  <img width="539" height="539" alt="image" src="https://github.com/user-attachments/assets/c51add01-9135-4b8f-a2aa-0dbcc281371f" />
 
   <br><em>Figure 6: The depth map itself and how it looks when it's rendered.</em>
 </p>
