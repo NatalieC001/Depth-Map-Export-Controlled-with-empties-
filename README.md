@@ -14,9 +14,9 @@ For Game Developers, this means baking complex details into optimized 2D texture
 
 The Workflow: Capture and Apply
 <img width="390" height="173" alt="image" src="https://github.com/user-attachments/assets/07b46aa0-0b87-40af-a888-2e534ff7b85c" />
-Visual: The Depthmap Export panel)
+  <br><em>Visual: The Depthmap Export panel</em> 
 <img width="327" height="270" alt="image" src="https://github.com/user-attachments/assets/c855190a-5cd2-4ace-b264-8d8d3c616d86" />
-Visual: the Stamper panel. 
+ <br><em>Visual: the Stamper panel.</em>    
 
 We use two specialized Blender scripts to automate the technical setup. First, the Depthmap Export script. You define the height boundaries with "Near" and "Far" markers. One click automates the compositor to export a normalized 16-bit file. Second, the Depthmap Stamper script. This automates the displacement modifier stack and UV mapping. It allows you to "press" your captured design into any new mesh either by using the Sculpt Brush or the Displace Map, bypassing hours of manual modeling.
 
