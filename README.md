@@ -145,6 +145,9 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 </p>
 
 <img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/5371da8e-3292-42a1-a605-4c64794118a6" />
+
+<img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/aaf1f8bc-faf5-4dc2-9568-4fb497e4fca4" />
+
   <br><em>Figure 7: Cutting the clay.</em>
 </p>
 
