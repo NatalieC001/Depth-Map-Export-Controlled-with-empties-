@@ -72,7 +72,7 @@ Set up your Blender scene and create 2 empties: "Near" represents the topmost he
 
 ---
 
-## Part 2: Depthmap Stamper (Displacement & Baking)
+## Part 2: Depthmap Stamper (Displacement & 3d printready geometry)
 The sister script for applying depth stamps to objects to create high-resolution assets within Blender.
 
 ### Overview
@@ -133,8 +133,6 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 ---
 
 ## Project Results
-
-
 
 <p align="center">
   <img width="701" height="452" alt="image" src="https://github.com/user-attachments/assets/9e792fa2-718a-42ad-a8d3-d6d45716a9e0" />
