@@ -67,7 +67,7 @@ Set up your Blender scene and create 2 empties: "Near" represents the topmost he
 <p align="center">
   <img width="539" height="539" alt="image" src="https://github.com/user-attachments/assets/c51add01-9135-4b8f-a2aa-0dbcc281371f" />
 
-  <br><em>Figure 6: The depth map itself and how it looks when it's rendered.</em>
+  <br><em>Figure 6: The depth map rendered either as open exr or png.</em>
 </p>
 
 ---
