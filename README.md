@@ -138,4 +138,4 @@ The script auto-creates and configures the displacement modifier stack.
 
 One design → one capture → infinite applications across digital sculpting, 3D printing, and traditional studio craft.
 
-Happy stamping, Natalie! 🎨🖨️ If you share the exact repo URL (or confirm your GitHub username/repo name), I can make the links 100% accurate. Also let me know if you'd like a short README.md draft for the repo itself, license suggestions, or anything else to make it release-ready. 🚀
+Happy stamping! 🎨🖨️🚀
