@@ -142,10 +142,16 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 
 <img width="1008" height="1024" alt="image" src="https://github.com/user-attachments/assets/d0f5400b-826b-475c-bbdf-fd0243e75b71" />
 
-  <br><em>Figure 7: Printing the stamp.</em>
+  <br><em>Figure 7: Printing the stamp ai mock.</em>
 </p>
 
 <p align="center">
   <img width="539" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
-  <br><em>Figure 9: The ceramic plate that is produced in its final form with the glazes on it.</em>
+  <br><em>Figure 9: The ceramic plate ai mock that is produced in its final form with the glazes on it.</em>
+
+<p align="center">
+ <img width="1024" height="741" alt="image" src="https://github.com/user-attachments/assets/ee1c5dcf-2037-43d5-9b53-5d464712517a" />
+
+  <br><em>Figure 9: wodden engraving ai mock.</em>
+  
 </p>
