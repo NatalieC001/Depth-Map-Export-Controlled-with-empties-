@@ -1,4 +1,33 @@
+Markdown
 # Depth Map Production and Displacement Workflow
+
+This guide covers the complete two-part process: generating normalized 16-bit depth maps in Blender and applying them to 3D objects. This project provides a streamlined solution for 3D artists to capture surface details and reapply them to new geometry using two specialized scripts. By using these tools, you can convert complex 3D models into reusable "stamps" (depth maps) and apply them to other surfaces instantly, bypassing hours of manual sculpting or modeling.
+
+## The Digital-to-Physical Journey: From Screen to Surface
+
+The transition from a virtual 3D design to a tangible object is a journey bridging digital precision with tactile craft. This process allows artists to take complex, three-dimensional geometry and "flatten" it into a portable digital stamp called a **16-bit Depth Map**. Unlike a standard photograph, this map stores precise height data: white pixels represent the highest peaks of a design, while black pixels represent the deepest valleys. By capturing these details as a 2D texture, we create a reusable asset that can be "pressed" into any surface—digital or physical.
+
+### Phase 1: Capturing the Digital Relief
+The process starts in **Blender** with the **Depthmap Export** script. After a detailed relief is modeled, the scene is calibrated using two markers: **Near** and **Far**. These define the vertical boundaries of the design, ensuring no detail is lost. With a single click, the script automates the compositor and node setup to generate a 16-bit PNG or OpenEXR image. This high bit-depth is essential; it provides thousands of increments of height data, preventing "banding"—the jagged artifacts that ruin smooth curves. The result is a clean, professional-grade digital die.
+
+### Phase 2: Applying the Stamp and Creating the Master
+Once the depth map is finalized, the **Depthmap Stamper** script allows you to re-apply this relief to new 3D geometry with one click. This script automates the modifier stack, UV mapping, and displacement settings to prepare a mesh for **3D printing**. The digital design is then printed to create a physical master stamp—a negative "die" made of rigid plastic. This tool becomes the bridge between software and material, allowing for the consistent transfer of patterns that would be nearly impossible to achieve by hand.
+
+### Phase 3: Stamping and Surface Formation
+The final stage is the physical impression. By pressing the master die into a pliable medium like paper clay, air-dry clay, or damp cardstock, the digital pattern is transferred with absolute fidelity. While the material is still soft, it can be shaped—such as placing a stamped clay slab into a concave mold to create a bowl, or embossing paper to create a textured artwork. Once the form is set, the surfaces can be painted or stained to highlight the depth of the relief, resulting in a professional-grade piece without the need for high-heat industrial equipment.
+
+---
+
+### Process Overview
+| Phase | Environment | Key Mechanism | Final Output |
+| :--- | :--- | :--- | :--- |
+| **I. Capture** | Digital (Blender) | **Export Script** (1-Click) | 16-bit Normalized Heightmap |
+| **II. Application** | Digital (Blender) | **Stamper Script** (1-Click) | Displacement-ready 3D Mesh |
+| **III. Transfer** | Physical (3D Print) | Negative Die Production | Rigid Master Stamp |
+| **IV. Impression** | Studio (Manual) | Pressing & Stamping | Relief Surface (Clay/Paper) |
+| **V. Formation** | Studio (Manual) | Slump Molding/Folding | Final Shaped Object |
+
+---
 
 This guide covers the complete two-part process: generating normalized 16-bit depth maps in Blender and applying them to 3D objects. This project provides a streamlined two-part solution for 3D artists to capture surface details and reapply them to new geometry. By using these scripts, you can convert complex 3D models into reusable "stamps" (depth maps) and apply them to other surfaces instantly, bypassing hours of manual sculpting or modeling.
 
