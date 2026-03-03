@@ -24,12 +24,13 @@ This precision enables smooth curves in both rendered/digital and physically emb
 
 ![16-bit vs 8-bit comparison / banding explanation](https://github.com/user-attachments/assets/2843df4a-f32c-4e92-b433-894d8b8a1fb9)
 
-## Core Tools
+## Core Tools – Available on GitHub
 
-Two lightweight Blender add-ons automate the heavy lifting:
+The complete scripts are  in the repository:  
+- `DepthMapExportWithEmpties.py` — one-click normalized 16-bit height map capture using Near/Far empties  
+- `3dStamperFromDepthMap.py` — one-click application of the map as displacement
 
-1. **Depthmap Export** — one-click normalized 16-bit height map capture  
-2. **Depthmap Stamper** — one-click application of the map as displacement
+You can download them directly or install as add-ons 
 
 ![Depthmap Export panel](https://github.com/user-attachments/assets/07b46aa0-0b87-40af-a888-2e534ff7b85c)  
 *Depthmap Export panel*
@@ -51,7 +52,7 @@ By the end you will produce:
 
 | Phase          | Environment     | Key Tool / Mechanism              | Output                              |
 |----------------|-----------------|------------------------------------|-------------------------------------|
-| 1. Capture     | Blender         | Depthmap Export script             | 16-bit normalized heightmap (PNG/EXR) |
+| 1. Capture     | Blender         | DepthMapExportWithEmpties.py       | 16-bit normalized heightmap (PNG/EXR) |
 | 2. Application | Blender         | Depthmap Stamper script            | Displacement-ready 3D mesh          |
 | 3. Preparation | Digital → Physical | 3D printing (negative)          | Rigid master stamp / die            |
 | 4. Impression  | Studio          | Manual pressing / stamping         | Relief in soft medium               |
@@ -62,8 +63,9 @@ By the end you will produce:
 **Goal**: Generate a clean, normalized 16-bit height map from any relief model.
 
 ### Installation
-1. Download `depthmap_export.py`
-2. Blender → **Edit > Preferences > Add-ons** → **Install** → enable **Render: Depthmap Export**
+1. Go to the repository: https://github.com/[your-username]/3dStamperFromDepthMap
+2. Download `DepthMapExportWithEmpties.py`
+3. In Blender: **Edit > Preferences > Add-ons** → **Install** → select the .py file → enable **Render: Depthmap Export** (or whatever label the script registers)
 
 ### Usage
 1. Model your relief geometry.
@@ -92,22 +94,19 @@ The script auto-configures the compositor, normalizes Z-depth between Near/Far, 
 **Goal**: Apply the captured depth map to any mesh as precise surface displacement.
 
 ### Installation
-1. Download `depthmap_stamper.py`
+1. From the same repo: download the stamper script (e.g. `DepthmapStamper.py`)
 2. Blender → **Edit > Preferences > Add-ons** → **Install** → enable **Object: Depthmap Stamper**
 
 ### Usage
 1. Select target mesh
-2. **UV unwrap** it (even simple/overlapping UVs work for 3D printing)
+2. **UV unwrap** it (simple/overlapping UVs are fine for 3D printing)
 3. Open **Depthmap Stamper** panel (N-panel or Properties)
 4. Load your 16-bit depth map texture
 5. Adjust **Strength** and **Midlevel** if needed
 6. Choose mode (single stamp or repeating/tiled)
 7. Click **Apply Displacement**
 
-The script auto-creates and configures:
-- Displacement modifier
-- Texture coordinate & mapping nodes
-- Multiresolution support (optional)
+The script auto-creates and configures the displacement modifier stack.
 
 ![Stamper UI](https://github.com/user-attachments/assets/c03333fc-fd2b-421e-950f-c1bff7a823ed)  
 *Figure 3: Stamper interface*
@@ -138,3 +137,5 @@ The script auto-creates and configures:
 ---
 
 One design → one capture → infinite applications across digital sculpting, 3D printing, and traditional studio craft.
+
+Happy stamping, Natalie! 🎨🖨️ If you share the exact repo URL (or confirm your GitHub username/repo name), I can make the links 100% accurate. Also let me know if you'd like a short README.md draft for the repo itself, license suggestions, or anything else to make it release-ready. 🚀
