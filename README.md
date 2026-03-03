@@ -135,13 +135,9 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 ## Project Results
 
 <p align="center">
-  <img width="701" height="452" alt="image" src="https://github.com/user-attachments/assets/9e792fa2-718a-42ad-a8d3-d6d45716a9e0" />
-  <br><em>Figure 7: Project results showing a scene with two objects that have displacement maps added; one is an orb with a repeated pattern and the other is a flat single pattern with the stamp.</em>
-</p>
+ <img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/a99b1fcc-fbde-4983-a2cc-96a169b9be02" />
 
-<p align="center">
-<img width="539" height="1024" alt="image" src="https://github.com/user-attachments/assets/eeb1da07-b3a3-489a-9417-58e579cc0ce3" />
-  <br><em>Figure 8: A mock up visualization of the cutter stamp finished so we can imagine what it looks like to print out the stamp used to cut ceramics.</em>
+  <br><em>Figure 7: Project results showing a scene with two objects that have displacement maps added; one is an orb with a repeated pattern and the other is a flat single pattern with the stamp.</em>
 </p>
 
 <p align="center">
