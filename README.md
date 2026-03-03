@@ -1,7 +1,11 @@
 Markdown
 # Depth Map Production and Displacement Workflow
 
-This guide covers the complete two-part process: generating normalized 16-bit depth maps in Blender and applying them to 3D objects. This project provides a streamlined solution for 3D artists to capture surface details and reapply them to new geometry using two specialized scripts. By using these tools, you can convert complex 3D models into reusable "stamps" (depth maps) and apply them to other surfaces instantly, bypassing hours of manual sculpting or modeling.
+Imagine creating a design once and applying it to any medium. This tutorial covers a unified workflow to create and capture16-bit depth maps in Blender and deploy them across three distinct industries. We are turning complex 3D geometry into a digital die—a "stamp" that works for digital assets and physical studio production.
+<img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/a1cf9ee2-e2ef-420c-a873-e82df1481335" />
+
+This guide covers the complete two-part process with provided scripts: generating normalized 16-bit depth maps in Blender and applying them to 3D objects. By using these scripts, you can convert complex 3D models into reusable "stamps" (depth maps) and apply them to other surfaces instantly, bypassing hours of manual sculpting or modeling.
+
 
 ## The Digital-to-Physical Journey: From Screen to Surface
 
