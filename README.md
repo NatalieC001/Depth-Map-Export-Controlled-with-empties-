@@ -24,7 +24,7 @@ This precision enables smooth curves in both rendered/digital and physically emb
 
 ![16-bit vs 8-bit comparison / banding explanation](https://github.com/user-attachments/assets/2843df4a-f32c-4e92-b433-894d8b8a1fb9)
 
-## Core Tools – Available on GitHub
+## Core Tools
 
 The complete scripts are  in the repository:  
 - `DepthMapExportWithEmpties.py` — one-click normalized 16-bit height map capture using Near/Far empties  
