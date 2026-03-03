@@ -1,8 +1,23 @@
-Markdown
-# Depth Map Production and Displacement Workflow
-
+YouTube Tutorial: The Master Stamp Workflow
+I. Introduction: The Universal Digital Die (0:00 - 0:45)
 Imagine creating a design once and applying it to any medium. This tutorial covers a unified workflow to create and capture16-bit depth maps in Blender and deploy them across three distinct industries. We are turning complex 3D geometry into a digital die—a "stamp" that works for digital assets and physical studio production.
 <img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/a1cf9ee2-e2ef-420c-a873-e82df1481335" />
+
+II. Why Use This Workflow? (0:45 - 1:30)
+<img width="1024" height="728" alt="image" src="https://github.com/user-attachments/assets/2843df4a-f32c-4e92-b433-894d8b8a1fb9" />
+
+ This process bridges the gap between digital precision and material craft. Think of this grayscale image as a digital rubbing. Just as you might press paper over a textured coin to see its surface, we use light and shadow to record height. In this view, white represents the highest points of your design while black represents the lowest base. Every shade of gray in between tells the computer exactly how far to push or pull a surface.
+By capturing 16-bit height data, we eliminate the "banding" and jagged artifacts found in standard images. A regular photo only has 256 levels of gray, which creates harsh, stair-stepped edges in a physical object. This 16-bit workflow provides over 65,000 levels of depth, ensuring that every curve remains as smooth as if you had hand-burnished it.
+For Game Developers, this means baking complex details into optimized 2D textures. For Ceramicists, it allows you to 3D print rigid master dies for consistent clay impressions. For Paper Artists, it provides the exact depth needed for professional-grade embossing plates. You gain total control over the slope of your design, allowing you to stretch paper fibers into a deep emboss without tearing them. This workflow turns a flat screen into a tactile tool for the physical world.
+
+III. The Workflow: Capture and Apply (1:30 - 2:45)
+Visual: The Depthmap Export panel (Figure 1) followed by the Stamper panel (Figure 3). Audio: We use two specialized Blender scripts to automate the technical setup. First, the Depthmap Export script. You define the height boundaries with "Near" and "Far" markers. One click automates the compositor to export a normalized 16-bit file. Second, the Depthmap Stamper script. This automates the displacement modifier stack and UV mapping. It allows you to "press" your captured design into any new mesh instantly, bypassing hours of manual modeling.
+
+IV. The Three Results: What You Will Achieve (2:45 - 3:30)
+Visual: Montage of the three specific end-points. Audio: By the end of this guide, you will have mastered three distinct outputs: One: An optimized 3D asset with high-fidelity surface detail ready for game engines. Two: A physical master stamp for transferring patterns into clay or pliable mediums. Three: A precision-carved die for paper embossing and tactile stationary. One workflow. Three professional industries. Total creative consistency.
+
+
+
 
 This guide covers the complete two-part process with provided scripts: generating normalized 16-bit depth maps in Blender and applying them to 3D objects. By using these scripts, you can convert complex 3D models into reusable "stamps" (depth maps) and apply them to other surfaces instantly, bypassing hours of manual sculpting or modeling.
 
