@@ -30,10 +30,24 @@ The transition from a virtual 3D design to a tangible object is a journey bridgi
 ### Phase 1: Capturing the Digital Relief
 The process starts in **Blender** with the **Depthmap Export** script. After a detailed relief is modeled, the scene is calibrated using two markers: **Near** and **Far**. These define the vertical boundaries of the design, ensuring no detail is lost. With a single click, the script automates the compositor and node setup to generate a 16-bit PNG or OpenEXR image. This high bit-depth is essential; it provides thousands of increments of height data, preventing "banding"—the jagged artifacts that ruin smooth curves. The result is a clean, professional-grade digital die.
 
-### Phase 2: Applying the Stamp and Creating the Master
-Once the depth map is finalized, the **Depthmap Stamper** script allows you to re-apply this relief to new 3D geometry with one click. This script automates the modifier stack, UV mapping, and displacement settings to prepare a mesh for **3D printing**. The digital design is then printed to create a physical master stamp—a negative "die" made of rigid plastic. This tool becomes the bridge between software and material, allowing for the consistent transfer of patterns that would be nearly impossible to achieve by hand.
+<img width="390" height="173" alt="image" src="https://github.com/user-attachments/assets/3b91fe46-c8cb-4c8a-ad45-496d46b03a77" />
 
-### Phase 3: Stamping and Surface Formation
+<img width="1024" height="741" alt="image" src="https://github.com/user-attachments/assets/54de334d-a985-4d89-875a-178adc971285" />
+
+
+### Phase 2: Applying the Stamp and Creating the Master
+Once the depth map is finalized, 
+<img width="910" height="906" alt="image" src="https://github.com/user-attachments/assets/1b181a08-c96f-4ceb-84bd-6583a9f66021" />
+
+the **Depthmap Stamper** script allows you to re-apply this relief to new 3D geometry with one click.
+<img width="327" height="270" alt="image" src="https://github.com/user-attachments/assets/18174053-d563-445d-8b15-e02e9130e1d0" />
+
+<img width="443" height="673" alt="image" src="https://github.com/user-attachments/assets/a111ea8c-42a8-43a4-9482-f3a969b21bbd" />
+
+
+This script automates the modifier stack, UV mapping, and displacement settings to prepare a mesh for **3D printing**. The digital design is then printed to create a physical master stamp—a negative "die" made of rigid plastic. This tool becomes the bridge between software and material, allowing for the consistent transfer of patterns that would be nearly impossible to achieve by hand.
+
+### Phase 3: Stamping and Surface Formation in the real world
 The final stage is the physical impression. By pressing the master die into a pliable medium like paper clay, air-dry clay, or damp cardstock, the digital pattern is transferred with absolute fidelity. While the material is still soft, it can be shaped—such as placing a stamped clay slab into a concave mold to create a bowl, or embossing paper to create a textured artwork. Once the form is set, the surfaces can be painted or stained to highlight the depth of the relief, resulting in a professional-grade piece without the need for high-heat industrial equipment.
 
 ---
