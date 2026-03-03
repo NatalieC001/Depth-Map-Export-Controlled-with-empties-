@@ -145,14 +145,12 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 </p>
 
 <img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/7c112292-cc58-49ff-a253-f148848206d3" />
-<img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/e08cc76b-4052-45c4-ab74-32863adb70a8" />
-
 
   <br><em>Figure 7: Cutting the clay.</em>
 </p>
 
 <p align="center">
-  <img width="1024" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
+ <img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/e08cc76b-4052-45c4-ab74-32863adb70a8" />
   
   <br><em>Figure 9: The ceramic plate ai mock that is produced in its final form with the glazes on it.</em>
 
