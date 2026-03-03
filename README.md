@@ -153,5 +153,9 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
  <img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/26832cca-9f0e-4540-bf4c-59574d9e8aa1" />
 
   <br><em>Figure 9: Paper embossing ai mock.</em>
+
+  <p align="center">
+ <img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/7499c6a7-6e7d-4a3b-817c-295ffda8d6dd" />
+  <br><em>Figure 9: Paper embossing notes.</em>
   
 </p>
