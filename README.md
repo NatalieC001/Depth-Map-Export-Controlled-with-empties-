@@ -45,7 +45,8 @@ Non-Destructive: Restores original render settings and node setups after export.
 Set up your Blender scene and create 2 empties: "Near" represents the topmost height, and "Far" the bottommost.
 
 <p align="center">
-  <img width="610" src="https://github.com/user-attachments/assets/b9c37b49-2759-4c75-a97d-fd5e2895fd59" alt="Export Panel" />
+  <img width="1024" height="741" alt="image" src="https://github.com/user-attachments/assets/8491b7cd-89d4-42dd-93aa-18290cb5228c" />
+
   <br><em>Figure 1: The scene inside of Blender showing the empties far and near plus the 3D model that I've created. That would later be the Ceramic Bowl.</em>
 </p>
 
@@ -64,8 +65,9 @@ Set up your Blender scene and create 2 empties: "Near" represents the topmost he
 | **Output** | `png or open exr` |
 
 <p align="center">
-  <img width="716" src="https://github.com/user-attachments/assets/0274437c-670a-4733-b780-65775aaea1aa" alt="Blender Node View" />
-  <br><em>Figure 2: The settings that automatically get applied depending on if we are having it as a repeated image or a single image.</em>
+  <img width="539" height="539" alt="image" src="https://github.com/user-attachments/assets/c51add01-9135-4b8f-a2aa-0dbcc281371f" />
+
+  <br><em>Figure 6: The depth map itself and how it looks when it's rendered.</em>
 </p>
 
 ---
@@ -87,11 +89,6 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 2. In Blender, go to **Edit > Preferences > Add-ons**.
 3. Click **Install**, select the file, and enable **Object: Depthmap Stamper**.
 
-<p align="center">
-  <img width="327" src="https://github.com/user-attachments/assets/c03333fc-fd2b-421e-950f-c1bff7a823ed" alt="Stamper UI" />
-  <br><em>Figure 3: The depth map placer plugin view that shows which texture, the displacement strength, and the button to generate the relief.</em>
-</p>
-
 ### Usage
 1. Select the object intended for displacement.
 2. Unwrap it.
@@ -101,7 +98,23 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 6. Click **Apply Displacement** to generate the modifier stack.
 
 <p align="center">
-  <img width="539" src="https://github.com/user-attachments/assets/e25b3fde-dff3-4892-a300-e498a5d77b02" alt="UV Mapping" />
+  <img width="327" src="https://github.com/user-attachments/assets/c03333fc-fd2b-421e-950f-c1bff7a823ed" alt="Stamper UI" />
+  <br><em>Figure 3: The depth map placer plugin view that shows which texture, the displacement strength, and the button to generate the relief.</em>
+</p>
+
+
+<br>
+<p align="center">
+  <img width="443" height="673" alt="image" src="https://github.com/user-attachments/assets/b8e4e262-7570-4c5a-b74c-3478b9d94e29" />
+
+  <br><em>Figure 2: The settings that automatically get applied depending on if we are having it as a repeated image or a single image.</em>
+</p>
+
+
+
+<p align="center">
+  <img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/d6737981-e0de-4503-a632-62b1d5d8b42c" />
+
   <br><em>Figure 4: The UV unwrap of how it looks with the faces being overlapped. Obviously, you can't do this for game characters because it would mess up the normals and shading, but it's OK for 3D printing.</em>
 </p>
 
@@ -121,11 +134,7 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 
 ## Project Results
 
-<p align="center">
-  <img width="539" height="539" alt="image" src="https://github.com/user-attachments/assets/c51add01-9135-4b8f-a2aa-0dbcc281371f" />
 
-  <br><em>Figure 6: The depth map itself and how it looks when it's rendered.</em>
-</p>
 
 <p align="center">
   <img width="701" height="452" alt="image" src="https://github.com/user-attachments/assets/9e792fa2-718a-42ad-a8d3-d6d45716a9e0" />
