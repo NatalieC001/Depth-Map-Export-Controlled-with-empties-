@@ -63,9 +63,9 @@ By the end you will produce:
 **Goal**: Generate a clean, normalized 16-bit height map from any relief model.
 
 ### Installation
-1. Go to the repository: https://github.com/[your-username]/3dStamperFromDepthMap
-2. Download `DepthMapExportWithEmpties.py`
-3. In Blender: **Edit > Preferences > Add-ons** → **Install** → select the .py file → enable **Render: Depthmap Export** (or whatever label the script registers)
+1. Go to the repository
+2. Download `3dStamperFromDepthMap and DepthMapExportWithEmpties.py`
+3. In Blender: **Edit > Preferences > Add-ons** → **Install** → select the .py file → enable **Render: Depthmap Export** 
 
 ### Usage
 1. Model your relief geometry.
