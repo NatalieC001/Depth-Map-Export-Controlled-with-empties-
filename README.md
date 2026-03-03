@@ -136,8 +136,7 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 
 <p align="center">
  <img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/a99b1fcc-fbde-4983-a2cc-96a169b9be02" />
-
-  <br><em>Figure 7: Project results showing a scene with two objects that have displacement maps added; one is an orb with a repeated pattern and the other is a flat single pattern with the stamp.</em>
+ <br><em>Figure 7: Project results showing a scene with two objects that have displacement maps added; one is an orb with a repeated pattern and the other is a flat single pattern with the stamp.</em>
 </p>
 
 <img width="1008" height="1024" alt="image" src="https://github.com/user-attachments/assets/d0f5400b-826b-475c-bbdf-fd0243e75b71" />
@@ -146,12 +145,13 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
 </p>
 
 <p align="center">
-  <img width="539" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
+  <img width="1024" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
+  
   <br><em>Figure 9: The ceramic plate ai mock that is produced in its final form with the glazes on it.</em>
 
-<p align="center">
- <img width="1024" height="741" alt="image" src="https://github.com/user-attachments/assets/ee1c5dcf-2037-43d5-9b53-5d464712517a" />
+  <p align="center">
+ <img width="1024" height="1008" alt="image" src="https://github.com/user-attachments/assets/26832cca-9f0e-4540-bf4c-59574d9e8aa1" />
 
-  <br><em>Figure 9: wodden engraving ai mock.</em>
+  <br><em>Figure 9: Paper embossing ai mock.</em>
   
 </p>
