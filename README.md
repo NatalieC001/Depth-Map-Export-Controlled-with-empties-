@@ -13,7 +13,12 @@ By capturing 16-bit height data, we eliminate the "banding" and jagged artifacts
 For Game Developers, this means baking complex details into optimized 2D textures. For Analog Artists, it provides the exact depth needed for professional-grade embossing plates and a chance to preview a design before commiting time and materials.
 
 The Workflow: Capture and Apply
-Visual: The Depthmap Export panel (Figure 1) followed by the Stamper panel (Figure 3). We use two specialized Blender scripts to automate the technical setup. First, the Depthmap Export script. You define the height boundaries with "Near" and "Far" markers. One click automates the compositor to export a normalized 16-bit file. Second, the Depthmap Stamper script. This automates the displacement modifier stack and UV mapping. It allows you to "press" your captured design into any new mesh either by using the Sculpt Brush or the Displace Map, bypassing hours of manual modeling.
+<img width="390" height="173" alt="image" src="https://github.com/user-attachments/assets/07b46aa0-0b87-40af-a888-2e534ff7b85c" />
+Visual: The Depthmap Export panel)
+<img width="327" height="270" alt="image" src="https://github.com/user-attachments/assets/c855190a-5cd2-4ace-b264-8d8d3c616d86" />
+Visual: the Stamper panel. 
+
+We use two specialized Blender scripts to automate the technical setup. First, the Depthmap Export script. You define the height boundaries with "Near" and "Far" markers. One click automates the compositor to export a normalized 16-bit file. Second, the Depthmap Stamper script. This automates the displacement modifier stack and UV mapping. It allows you to "press" your captured design into any new mesh either by using the Sculpt Brush or the Displace Map, bypassing hours of manual modeling.
 
 The Three Results: What You Will Achieve
 Visual: Montage of the three specific end-points. By the end of this guide, you will have mastered three distinct outputs: One: A 3D stamp asset with high-fidelity surface detail ready for detailing your sculpts. Two: A physical master stamp for transferring patterns into clay or pliable mediums. One workflow. Three professional industries. 
