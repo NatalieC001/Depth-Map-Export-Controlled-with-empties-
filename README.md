@@ -144,6 +144,10 @@ Precision Mapping: Uses the exported height data to drive exact vertex deformati
   <br><em>Figure 7: Printing the stamp ai mock.</em>
 </p>
 
+<img width="1024" height="666" alt="image" src="https://github.com/user-attachments/assets/5371da8e-3292-42a1-a605-4c64794118a6" />
+  <br><em>Figure 7: Cutting the clay.</em>
+</p>
+
 <p align="center">
   <img width="1024" src="https://github.com/user-attachments/assets/e3472d06-50d3-4f02-912c-997837237dc7" alt="Final Result" />
   
