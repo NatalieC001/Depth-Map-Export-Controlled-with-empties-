@@ -136,6 +136,12 @@ The script auto-creates and configures the displacement modifier stack.
 
 ---
 
+## Blender Depth Map to Silhouette Emboss
+
+Export your Z-depth map from Blender as a 16-bit PNG and drop it into Silhouette Studio. Use the Emboss Panel to apply a fill pattern to the image, which translates the grayscale gradients into the specific tool paths required for the Power Embosser. Place your material on the embossing mat and hit Send to let the machine's downward force execute the relief based on those generated paths.
+
+---
+
 One design → one capture → infinite applications across digital sculpting, 3D printing, and traditional studio craft.
 
 Happy stamping! 🎨🖨️🚀
