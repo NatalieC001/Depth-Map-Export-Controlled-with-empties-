@@ -1,4 +1,5 @@
 # The Master Stamp Workflow: From Digital Relief to Physical Surface
+*Developed as part of the [Hummingbird in Paper](https://nataliec001.github.io/Hummingbird-in-Paper/) project.*
 
 ## I. Introduction – The Universal Digital Die
 
